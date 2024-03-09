@@ -27,7 +27,7 @@ export const Blogs = () => {
     <div className="mb-9">
       <Appbar />
       <div className="flex justify-center">
-        <div className=" hover:invert-25">
+        <div>
           {blogs.map((blog, index) => (
             <BlogCard
               title={blog.title}

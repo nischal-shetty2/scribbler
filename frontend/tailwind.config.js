@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       invert: {
+        10: ".1",
         25: ".25",
         50: ".5",
         75: ".75",
