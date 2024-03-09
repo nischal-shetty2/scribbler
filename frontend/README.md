@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Scribbler Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Scribbler is a frontend application for a blogging website, built using React, Tailwind CSS, TypeScript, and Zod for validation.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Tailwind CSS
+- TypeScript
+- Zod
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The project structure includes:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- `public/`: Public assets and HTML file
+- `src/`: Source code directory
+  - `components/`: Reusable UI components
+  - `pages/`: Different pages of the application
+  - `App.tsx`: Main component
+- `.gitignore`: Git ignore file
+- `package.json`: Node.js package file
+- `tsconfig.json`: TypeScript configuration file
